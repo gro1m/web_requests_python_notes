@@ -8,9 +8,9 @@ import json, requests
 payload = '[{"key": "value"}]'
 
 proxies = {
-"http_proxy": "http://...",
-"https_proxy": "http://...",
-"no_proxy": "localhost, 127.0.0.1, ..."
+    "http_proxy": "http://...",
+    "https_proxy": "http://...",
+    "no_proxy": "localhost, 127.0.0.1, ..."
 }
 
 rest_endpoint = "rest/<method_name>" 
