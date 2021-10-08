@@ -14,9 +14,9 @@ proxies = {
 }
 
 rest_endpoint = "rest/<method_name>" 
-url = "http://localhost:5000" # software port 5000 is default for flask for example
+main_url = "http://localhost:5000" # software port 5000 is default for flask for example
 
-with requests.post(url=url, json = json.loads(payload), proxies = proxies) as response:
+with requests.post(url=main_url+rest_endpoint, json = json.loads(payload), proxies = proxies) as response:
   print(response.text, response.status_code)
 ```
 
